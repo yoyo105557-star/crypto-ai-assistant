@@ -1,30 +1,20 @@
-# Crypto AI Assistant v1 Web Upload Edition
+# Crypto AI Assistant Single File Edition
 
-手機 GitHub 網頁上傳版。
-
-## 先上傳這些檔案
+只需要 3 個檔案：
 - main.py
 - requirements.txt
-- services/
-- core/
-- telegram_bot/
-- templates/
-- github_workflows/
+- daily_report.yml
 
-## GitHub Secrets 需要
+## GitHub Secrets
 - OPENAI_API_KEY
 - TELEGRAM_BOT_TOKEN
 - TELEGRAM_CHAT_ID
 
-## 重要
-GitHub Actions 需要把：
-
-github_workflows/daily_report.yml
-
-移到：
-
+## GitHub Actions
+把 daily_report.yml 放到：
 .github/workflows/daily_report.yml
 
-如果手機網頁不能上傳 .github 資料夾，就用 vscode.dev 建立：
-.github/workflows/daily_report.yml
-然後貼入 github_workflows/daily_report.yml 的內容。
+如果手機 GitHub 不方便建立 .github 資料夾：
+1. 先上傳 main.py / requirements.txt
+2. 用 github.dev 建立 .github/workflows/daily_report.yml
+3. 貼上 daily_report.yml 內容
