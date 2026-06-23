@@ -1,4 +1,4 @@
-name: Crypto Daily Report
+name: Crypto Daily Report v1
 
 on:
   workflow_dispatch:
